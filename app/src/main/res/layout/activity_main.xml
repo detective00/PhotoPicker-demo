@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp"
+    tools:context="com.javon.photopicker.MainActivity">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_normal"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="正常调用相册" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_special"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="正常调用相册(GIF)" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_single"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="正常调用相册(ONE)" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_no_capture"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="无拍照功能" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_no_preview"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="无预览功能" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_save_remote"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="保存网络图片" />
+
+</LinearLayout>

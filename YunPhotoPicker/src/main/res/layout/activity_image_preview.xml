@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <include layout="@layout/view_toolbar"
+      />
+
+  <FrameLayout
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/toolbar"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp"
+      android:transitionName="图片预览"
+
+      >
+
+    <fragment
+        android:id="@+id/photoPagerFragment"
+        android:name="com.javon.yunphotopicker.fragment.ImagePreviewFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+  </FrameLayout>
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fab_save"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:src="@android:drawable/ic_menu_save"/>
+
+</RelativeLayout>
